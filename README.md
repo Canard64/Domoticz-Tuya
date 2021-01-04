@@ -22,7 +22,7 @@ Dans la page web cliquez sur  "**Add App Account**" and scannez le QR code. Votr
 5. Dans le menu API Group activer les composants suivants (**Open**)
 ![Get Ids](img/API-Group.png)
 
-### Step 2 - Configuration du scritp
+### Step 2 - Configuration du script
 Dans le dossier du script vous trouverez `code.json`. Modifiez le avec les informations Client ID et Client Secret ainsi que les prises nécessaires.
 
 `{
