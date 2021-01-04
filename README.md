@@ -5,7 +5,7 @@ Utilisation des API tuya pour intégration dans DOMOTICZ
 
 
 ## Comment ça marche ?
-### Step 1 - Obtenir des clés et lié son compte
+### Step 1 - Obtenir des clés et lier son compte
 
 1. Créez un compte sur ce site https://developer.tuya.com/en/cloud-development 
 ![Get Ids](img/CloudDev.jpg)
