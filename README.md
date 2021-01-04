@@ -75,10 +75,10 @@ Allez dans le menu Swich
 
 Puis modifier les caractéristiques de la prise.
 On action : 
-script:///home/pi/domoticz/scripts/python/domoticz-tuya/main.py --switch DEVICEID true
+`script:///home/pi/domoticz/scripts/python/domoticz-tuya/main.py --switch DEVICEID true`
 
 Off action : 
-script:///home/pi/domoticz/scripts/python/domoticz-tuya/main.py --switch DEVICEID false
+`script:///home/pi/domoticz/scripts/python/domoticz-tuya/main.py --switch DEVICEID false`
 
 ![Get Ids](img/DomoFin.jpg)
 
