@@ -14,21 +14,19 @@ Creer un compte sur la plateforme
 ![Get Ids](img/CreateSAASApp.jpg)
 ![Get Ids](img/CreateSAASApp-btn.jpg)
 Après avoir créé l'application cliquez dessus pour obtenir vos clés.
-![Get Ids](img/CreateSAASApp-btn.jpg)
+![Get Ids](img/ClientID-Secret.jpg)
 4. Dans le menu de gauche cliquez sur "**Linked Devices**". Sélectionnez l'onglet "**Link devices by App Account**". 
 Sur votre téléphone allez dans  "**Profil**" cliquez sur l’icône  "**Scan**". 
 Dans la page web cliquez sur  "**Add App Account**" and scannez le QR code. Votre compte est maintenant lié "_Tuya Cloud_".
-5.Dans le menu API Group activer les composants suivants
-![Get Ids](img/API-Group.jpg)
+5. Dans le menu API Group activer les composants suivants
+![Get Ids](img/API-Group.png)
 
 ### Step 2 - Configure the application
-Dans le dossier du script vous trouverez `code.json.model`. Renommez le en `code.json` et complétez le avec les informations Client ID et Client Secret.
-
-![Get Ids](img/CloudDev.jpg)
+Dans le dossier du script vous trouverez `code.json`.Modifiez le avec les informations Client ID et Client Secret ainsi que les prises nécessaires.
 
 `{
    "devices":{
-      "prise_a":"",
+      "prise_a":"",                               
       "prise_b":""
    },
    "client_id":"",
