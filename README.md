@@ -72,9 +72,9 @@ Ajoutez le mode éxecutable au fichier main.py.
 ## Integration dans DOMOTICZ
 
 Dans Domoticz créez un dummy device de type Switch et sur les actions On & Off appeller le script avec l'option switch True or False.
-[Get Ids](img/DomoCreate.jpg)
+![Get Ids](img/DomoCreate.jpg)
 Allez dans le menu Swich 
-[Get Ids](img/DomoMenuSwitch.jpg)
+![Get Ids](img/DomoMenuSwitch.jpg)
 Puis modifier les caracteristes de la prise 
 On action : 
 script:///home/pi/domoticz/scripts/python/domoticz-tuya/main.py --switch DEVICEID true
@@ -82,7 +82,7 @@ script:///home/pi/domoticz/scripts/python/domoticz-tuya/main.py --switch DEVICEI
 Off action : 
 script:///home/pi/domoticz/scripts/python/domoticz-tuya/main.py --switch DEVICEID false
 
-[Get Ids](img/DomoFin.jpg)
+![Get Ids](img/DomoFin.jpg)
 
 
 
