@@ -15,7 +15,7 @@ Creer un compte sur la plateforme https://developer.tuya.com/en/cloud-developmen
 ### Step 2 - Configure the application
 Dans le dossier du script vous trouverez `code.json.model`. Renommez le en `code.json` et complétez le avec les informations Client ID et Client Secret.
 
-![Get Ids](assets/1.jpg)
+![Get Ids](img/CloudDev.jpg)
 
 `{
    "devices":{
