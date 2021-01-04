@@ -2,7 +2,7 @@
 Utilisation des API tuya pour intégration dans DOMOTICZ
 
 [![made-with-python](https://img.shields.io/badge/Made%20with-Python-1f425f.svg)](https://www.python.org/)
-Creer un compte sur la plateforme 
+
 
 ## Comment ça marche ?
 ### Step 1 - Obtenir des clés et lié son compte
@@ -22,19 +22,13 @@ Dans la page web cliquez sur  "**Add App Account**" and scannez le QR code. Votr
 5. Dans le menu API Group activer les composants suivants (**Open**)
 ![Get Ids](img/API-Group.png)
 
-### Step 2 - Configure le scritp
+### Step 2 - Configuration du scritp
 Dans le dossier du script vous trouverez `code.json`. Modifiez le avec les informations Client ID et Client Secret ainsi que les prises nécessaires.
 
 `{
-   "devices":{
-      "prise_a":"",                               
-      "prise_b":""
-   },
    "client_id":"",
    "app_id":""
 }`
-
-La liste des devices est totalement optionnelle pour le moment. Je l'ai ajouté afin de garder en mémoire les ids des prises. Ces derniers se trouvent dans l'application dans les informatins du Device à la ligne ID Virtuel.
 
 
 ### Step 3 - Fonctionnement du script
@@ -71,11 +65,15 @@ Ajoutez le mode éxecutable au fichier main.py.
 
 ## Integration dans DOMOTICZ
 
-Dans Domoticz créez un dummy device de type Switch et sur les actions On & Off appeller le script avec l'option switch True or False.
+Dans Domoticz créez un dummy device de type Switch.
+
 ![Get Ids](img/DomoCreate.jpg)
+
 Allez dans le menu Swich 
+
 ![Get Ids](img/DomoMenuSwitch.jpg)
-Puis modifier les caracteristes de la prise 
+
+Puis modifier les caractéristiques de la prise.
 On action : 
 script:///home/pi/domoticz/scripts/python/domoticz-tuya/main.py --switch DEVICEID true
 
