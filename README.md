@@ -40,7 +40,7 @@ Il vous faut récupérer les ID des prises dans le cloud Tuya
 Les ids sont dans la premiere colonne Device Name/ID
 ![Get Ids](img/ListDevices2.jpg)
 
-example : Remplacer b32d445f334D33 par ton deviceID  
+example : Remplacer b32d445f334D33 par votre deviceID  
 `python3 main.py --switch b32d445f334D33`
 
 `Options available
