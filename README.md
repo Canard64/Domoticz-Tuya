@@ -12,6 +12,7 @@ Creer un compte sur la plateforme
 2. Enregistrez vos prises dans l'application via votre téléphone  ([Android](https://play.google.com/store/apps/details?id=com.tuya.smart&hl=fr) or [IOS](https://apps.apple.com/fr/app/tuyasmart/id1034649547)). 
 3. Une fois le compte validé, cliquez sur "**Cloud Development**" dans la barre en haut puis cliquez sur  "**CreateSAASApplication**". 
 ![Get Ids](img/CreateSAASApp.jpg)
+Créer votre application en cliquant sur le bouton **Create**
 ![Get Ids](img/CreateSAASApp-btn.jpg)
 Après avoir créé l'application cliquez dessus pour obtenir vos clés.
 ![Get Ids](img/ClientID-Secret.jpg)
@@ -52,6 +53,9 @@ Dans votre dossier de scripts Domoticz clonez le repo.
 exemple pour rasberry pi : `cd /pi/home/domoticz/script/python/`
 
 `git clone https://github.com/Canard64/Domoticz-Tuya.git `
+
+Veuillez changer la ligne `self.full_path` en fonction du chemin où vous avez mis vos sources
+![Get Ids](img/FullPath.png)
 
 Ajoutez le mode éxecutable au fichier main.py.
 `chmod a+x main.py`
