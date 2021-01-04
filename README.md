@@ -74,6 +74,7 @@ Allez dans le menu Swich
 ![Get Ids](img/DomoMenuSwitch.jpg)
 
 Puis modifier les caractéristiques de la prise.
+
 On action : 
 `script:///home/pi/domoticz/scripts/python/domoticz-tuya/main.py --switch DEVICEID true`
 
