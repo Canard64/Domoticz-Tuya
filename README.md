@@ -18,11 +18,11 @@ Après avoir créé l'application cliquez dessus pour obtenir vos clés.
 4. Dans le menu de gauche cliquez sur "**Linked Devices**". Sélectionnez l'onglet "**Link devices by App Account**". 
 Sur votre téléphone allez dans  "**Profil**" cliquez sur l’icône  "**Scan**". 
 Dans la page web cliquez sur  "**Add App Account**" and scannez le QR code. Votre compte est maintenant lié "_Tuya Cloud_".
-5. Dans le menu API Group activer les composants suivants
+5. Dans le menu API Group activer les composants suivants (**Open**)
 ![Get Ids](img/API-Group.png)
 
 ### Step 2 - Configure the application
-Dans le dossier du script vous trouverez `code.json`.Modifiez le avec les informations Client ID et Client Secret ainsi que les prises nécessaires.
+Dans le dossier du script vous trouverez `code.json`. Modifiez le avec les informations Client ID et Client Secret ainsi que les prises nécessaires.
 
 `{
    "devices":{
@@ -47,9 +47,11 @@ main.py --toggle <ID>`
 
 ## Installation 
 
-Dans votre dossier de scripts Domoticz clonez le repo.
+Dans votre dossier de scripts Domoticz clonez le repo. 
 
-`git clone https://github.com/BreizhCat/domoticz-tuya.git `
+exemple pour rasberry pi : `cd /pi/home/domoticz/script/python/`
+
+`git clone https://github.com/Canard64/Domoticz-Tuya.git `
 
 Ajoutez le mode éxecutable au fichier main.py.
 `chmod a+x main.py`
