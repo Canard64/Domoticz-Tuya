@@ -55,7 +55,7 @@ exemple pour rasberry pi : `cd /pi/home/domoticz/script/python/`
 `git clone https://github.com/Canard64/Domoticz-Tuya.git `
 
 Veuillez changer la ligne `self.full_path` en fonction du chemin où vous avez mis vos sources
-![Get Ids](img/FullPath.png)
+![Get Ids](img/FullPath.jpg)
 
 Ajoutez le mode éxecutable au fichier main.py.
 `chmod a+x main.py`
