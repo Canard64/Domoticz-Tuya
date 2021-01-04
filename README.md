@@ -22,7 +22,7 @@ Dans la page web cliquez sur  "**Add App Account**" and scannez le QR code. Votr
 5. Dans le menu API Group activer les composants suivants (**Open**)
 ![Get Ids](img/API-Group.png)
 
-### Step 2 - Configure the application
+### Step 2 - Configure le scritp
 Dans le dossier du script vous trouverez `code.json`. Modifiez le avec les informations Client ID et Client Secret ainsi que les prises nécessaires.
 
 `{
@@ -37,7 +37,7 @@ Dans le dossier du script vous trouverez `code.json`. Modifiez le avec les infor
 La liste des devices est totalement optionnelle pour le moment. Je l'ai ajouté afin de garder en mémoire les ids des prises. Ces derniers se trouvent dans l'application dans les informatins du Device à la ligne ID Virtuel.
 
 
-### Step 3 - Fonctionnement
+### Step 3 - Fonctionnement du script
 Ce script envoi des requêtes au Cloud Tuya pour envoyer des commandes aux prises. 
 Il vous faut récupérer les ID des prises dans le cloud Tuya
 
@@ -55,7 +55,7 @@ main.py --status <ID>
 main.py --toggle <ID>`
 
 
-## Installation 
+## Installation du script
 
 Dans votre dossier de scripts Domoticz clonez le repo. 
 
@@ -69,10 +69,21 @@ Veuillez changer la ligne `self.full_path` en fonction du chemin où vous avez m
 Ajoutez le mode éxecutable au fichier main.py.
 `chmod a+x main.py`
 
+## Integration dans DOMOTICZ
 
-Dans Domoticz créez un dummy device et sur les actions On & Off appeller le script avec l'option switch True or False.
+Dans Domoticz créez un dummy device de type Switch et sur les actions On & Off appeller le script avec l'option switch True or False.
+[Get Ids](img/DomoCreate.jpg)
+Allez dans le menu Swich 
+[Get Ids](img/DomoMenuSwitch.jpg)
+Puis modifier les caracteristes de la prise 
+On action : 
+script:///home/pi/domoticz/scripts/python/domoticz-tuya/main.py --switch DEVICEID true
 
-![Dummy Switch](assets/2.png)
+Off action : 
+script:///home/pi/domoticz/scripts/python/domoticz-tuya/main.py --switch DEVICEID false
+
+[Get Ids](img/DomoFin.jpg)
+
 
 
 
