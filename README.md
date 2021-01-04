@@ -37,14 +37,23 @@ Dans le dossier du script vous trouverez `code.json`. Modifiez le avec les infor
 La liste des devices est totalement optionnelle pour le moment. Je l'ai ajouté afin de garder en mémoire les ids des prises. Ces derniers se trouvent dans l'application dans les informatins du Device à la ligne ID Virtuel.
 
 
-### Step 3 - Play with it
-Ce script envoi des requêtes au Cloud Tuya pour envoyer des commandes aux prises.
+### Step 3 - Fonctionnement
+Ce script envoi des requêtes au Cloud Tuya pour envoyer des commandes aux prises. 
+Il vous faut récupérer les ID des prises dans le cloud Tuya
 
+1. Allez dans le menu **DeviceList** puis selectionnez le serveur Europe si vous êtes en Europe
+![Get Ids](img/ListDevices.jpg)
+Les ids sont dans la premiere colonne Device Name/ID
+![Get Ids](img/ListDevices2.jpg)
+
+example : Remplacer b32d445f334D33 par ton deviceID  
+`python3 main.py --switch b32d445f334D33`
 
 `Options available
 main.py --switch <ID> <True|False>
 main.py --status <ID>
 main.py --toggle <ID>`
+
 
 ## Installation 
 
